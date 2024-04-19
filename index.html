@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/icons/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Vinicius Zanato</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: end; padding: 30px 40px 0 0;">
+        <input id="toggle" class="toggle" type="checkbox">
+    </div>
+
+    <div class="background">
+        <div class="image-container">
+            <img src="./assets/img/me.png" alt="" class="image">
+            <p style="font-size: 20px; font-family: 'Exo', sans-serif; color: #fff;">
+                @zanato_o
+            </p>
+        </div>
+
+        <div class="container">
+            <a href="./pages/Skills/index.html" style="text-decoration: none; width: 100%;">
+                <button class="link-button">
+                    <p style=" font-family: 'Exo', sans-serif; color: #fff; font-size: 25px;">
+                        Skills
+                    </p>
+                </button>
+            </a>
+
+            <a href="./pages/Projects/index.html" style="text-decoration: none; width: 100%;">
+                <button class="link-button">
+                    <p style=" font-family: 'Exo', sans-serif; color: #fff; font-size: 25px;">
+                        Projects
+                    </p>
+                </button>
+            </a>
+
+            <a href="./pages/AboutMe/index.html" style="text-decoration: none; width: 100%;">
+                <button class="link-button">
+                    <p style=" font-family: 'Exo', sans-serif; color: #fff; font-size: 25px;">
+                        About Me
+                    </p>
+                </button>
+            </a>
+
+            <a href="./pages/ContactMe/index.html" style="text-decoration: none; width: 100%;">
+                <button class="link-button">
+                    <p style=" font-family: 'Exo', sans-serif; color: #fff; font-size: 25px;">
+                        Contact Me
+                    </p>
+                </button>
+            </a>
+        </div>
+
+        <div class="icons-container">
+            <a href="https://www.instagram.com/zanato_o/?next=%2F"><i class="icons fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ViniciusZanato"><i class="icons fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-zanato-985b03205/"><i
+                    class="icons fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const hours = new Date().getHours();
+    toggle.checked = hours > 7 && hours < 20;
+    toggle.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+<script src="https://kit.fontawesome.com/d10c72fe86.js" crossorigin="anonymous"></script>
+
+</html>

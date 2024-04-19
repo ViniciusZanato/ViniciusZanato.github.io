@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/icons/uicons-brands/css/uicons-brands.css">
+    <link rel="stylesheet" href="../Skills/styles.css">
+    <script src="https://kit.fontawesome.com/d10c72fe86.js" crossorigin="anonymous"></script>
+    <title>Skills</title>
+</head>
+
+<body>
+    <div
+        style="display: flex; justify-content: space-between; padding: 30px 40px 0 40px; position: fixed; top: 0; left: 0; right: 0;">
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+            <a href="../../index.html">
+                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #fff;"></i>
+            </a>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+            <input id="toggle" class="toggle" type="checkbox">
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="title-container">
+            <p class="title">
+                My Skills
+            </p>
+        </div>
+
+        <div class="container">
+            <div style="width: 100%; height: 90%;">
+                <div class="skilss-container">
+                    <p class="skills-titles">REACT</p>
+                    <div class="progress progress-moved">
+                        <div class="progress-bar react">
+                        </div>
+                    </div>
+                    <p class="skills-levels">
+                        50%
+                    </p>
+                </div>
+
+                <div class="skilss-container">
+                    <p class="skills-titles">HTML</p>
+                    <div class="progress progress-moved">
+                        <div class="progress-bar html">
+                        </div>
+                    </div>
+                    <p class="skills-levels">
+                        80%
+                    </p>
+                </div>
+
+                <div class="skilss-container">
+                    <p class="skills-titles">CSS</p>
+                    <div class="progress progress-moved">
+                        <div class="progress-bar css">
+                        </div>
+                    </div>
+                    <p class="skills-levels">
+                        70%
+                    </p>
+                </div>
+
+                <div class="skilss-container">
+                    <p class="skills-titles">JS</p>
+                    <div class="progress progress-moved">
+                        <div class="progress-bar js">
+                        </div>
+                    </div>
+                    <p class="skills-levels">
+                        50%
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="icons-container">
+            <a href="https://www.instagram.com/zanato_o/?next=%2F"><i class="icons fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ViniciusZanato"><i class="icons fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-zanato-985b03205/"><i
+                    class="icons fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const hours = new Date().getHours();
+    toggle.checked = hours > 7 && hours < 20;
+    toggle.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</html>

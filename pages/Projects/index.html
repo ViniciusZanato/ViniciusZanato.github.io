@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d10c72fe86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div
+        style="display: flex; justify-content: space-between; padding: 30px 40px 0 40px; position: fixed; top: 0; left: 0; right: 0;">
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+            <a href="../../index.html">
+                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #fff;"></i>
+            </a>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+            <input id="toggle" class="toggle" type="checkbox">
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="title-container">
+            <p class="title">
+                My Projects
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="projects">
+                <div class="projects-img">
+                    <img src="../../assets/img/logos/LocalWise Logo.png" alt=""
+                        style="width: 90%; border-radius: 10px;">
+                </div>
+
+                <div class="projects-title">
+                    Local Wise
+                </div>
+
+                <div class="projects-text">
+                    Local Wise is a web-based application developed as part of my thesis project.
+                    Built using ASP.NET, this platform serves as a comprehensive hub connecting tourists with local tour
+                    guides in various cities around the world. The primary objective is to facilitate seamless
+                    communication and collaboration between tourists seeking authentic local experiences and certified
+                    tour guides offering their services.
+                    <br />
+                    <br />
+                    The platform employs a user-friendly interface that allows for easy navigation and interaction.
+                    Tourists can browse through various cities and explore the profiles of different tour guides before
+                    making a selection. Likewise, tour guides can manage their profiles, update their offerings, and
+                    respond to inquiries from potential tourists.
+                    <p>
+                        Repository Link: <a href="https://github.com/ViniciusZanato/LocalWise">LocalWise</a>
+                    </p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="projects-img">
+                    <img src="../../assets/img/logos/MyRoadMap Logo.png" alt=""
+                        style="width: 90%; border-radius: 10px;">
+                </div>
+                <div class="projects-title">
+                    My Road Map
+                </div>
+                <div class="projects-text">
+                    Travel Planner is a mobile application developed to provide a personalized and intelligent travel
+                    experience. Built using Expo and integrated with the powerful ChatGPT from OpenAI, this
+                    application is an innovative tool for those looking to plan their trips conveniently and
+                    effectively.
+                    <br />
+                    <br />
+                    The main functionality of Travel Planner is the creation of tailor-made travel itineraries, all
+                    through a simple interaction with the chatbot powered by ChatGPT. Users can start by typing the
+                    desired destination in the search bar, and then ChatGPT takes action, suggesting must-see locations,
+                    exciting activities, and even recommendations for restaurants and hotels based on their personal
+                    preferences.
+                    <p>
+                        Repository Link: <a href="#">Still on work</a>
+                    </p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="projects-img">
+                    <img src="../../assets/img/logos/Taskify Logo.png" alt="" style="width: 90%; border-radius: 10px;">
+                </div>
+                <div class="projects-title">
+                    TaskiFy
+                </div>
+                <div class="projects-text">
+                    Taskify is a mobile application designed to streamline task management for users on the go, offering
+                    a convenient solution for organizing daily activities. Developed using the Expo platform, Taskify
+                    offers a user-friendly interface and robust features to help individuals organize their daily
+                    activities effortlessly.
+                    <br />
+                    <br />
+                    The core functionality of Taskify revolves around creating, tracking, and managing tasks
+                    effectively. Users can easily add new tasks to their lists, specifying details such as due dates,
+                    priorities, and additional notes to ensure clarity and organization. Whether it's a work assignment,
+                    a personal errand, or a project milestone, Taskify provides the flexibility to adapt to various task
+                    types and requirements, ensuring users can stay on top of their tasks with ease.
+                    <p>
+                        Repository Link: <a href="#">Still on work</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="icons-container">
+            <a href="https://www.instagram.com/zanato_o/?next=%2F"><i class="icons fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ViniciusZanato"><i class="icons fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-zanato-985b03205/"><i
+                    class="icons fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const hours = new Date().getHours();
+    toggle.checked = hours > 7 && hours < 20;
+    toggle.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+<script src="https://kit.fontawesome.com/d10c72fe86.js" crossorigin="anonymous"></script>
+
+</html>

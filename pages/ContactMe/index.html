@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>About Me</title>
+</head>
+
+<body>
+    <div
+        style="display: flex; justify-content: space-between; padding: 30px 40px 0 40px; position: fixed; top: 0; left: 0; right: 0;">
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+            <a href="../../index.html">
+                <i class="fa-solid fa-arrow-left fa-2xl" style="color: #fff;"></i>
+            </a>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+            <input id="toggle" class="toggle" type="checkbox">
+        </div>
+    </div>
+
+    <div class="background">
+        <div class="title-container">
+            <p class="title">
+                My Contacts
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="labels-titles">
+                <i class="fa-solid fa-envelope"></i> My personal E-mail:
+            </div>
+            <div class="labels">
+                viniciuszvelloso@gmail.com
+            </div>
+
+            <div class="labels-titles" style="margin-top: 30px;">
+                <i class="fa-solid fa-phone"></i> My phone:
+            </div>
+            <div class="labels">
+                +55 (12) 98105-6370
+            </div>
+        </div>
+
+        <div class="icons-container">
+            <a href="https://www.instagram.com/zanato_o/?next=%2F"><i class="icons fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/ViniciusZanato"><i class="icons fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vin%C3%ADcius-zanato-985b03205/"><i
+                    class="icons fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const hours = new Date().getHours();
+    toggle.checked = hours > 7 && hours < 20;
+    toggle.addEventListener('change', function () {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+<script src="https://kit.fontawesome.com/d10c72fe86.js" crossorigin="anonymous"></script>
+
+</html>
